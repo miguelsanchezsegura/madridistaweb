@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo Final</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Menú de navegación principal -->
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#plantilla">Plantilla</a>
+        <a href="paginasecundaria.html">Página Secundaria</a>
+    </div>
+
+    <!-- Selector de temas de color -->
+    <div id="themeSelector">
+        <div class="encabezadotemas">
+            <h2>Cambiar tema</h2>
+        </div>
+        <div class="botones">
+            <button onclick="setTheme('primera')">Primera equipación</button>
+            <button onclick="setTheme('segunda')">Segunda equipación</button>
+            <button onclick="setTheme('tercera')">Tercera equipación</button>
+        </div>
+    </div>
+
+    <!-- Sección de productos a la venta -->
+    <h2>Productos Real Madrid</h2>
+    <div id="productos">
+        <div class="producto">
+            <p>
+                <div class="camiseta">
+                    <img src="primera.webp" alt=""> Camiseta 1ª Equipación - 100€
+                </div>
+            </p>
+            <button onclick="agregarAlCarrito('Camiseta 1ª Equipación', 100)">Agregar</button>
+        </div>
+        <div class="producto">
+            <p>
+                <div class="camiseta">
+                    <img src="segunda.webp" alt=""> Camiseta 2ª Equipación - 90€
+                </div>
+            </p>
+            <button onclick="agregarAlCarrito('Camiseta 2ª Equipación', 90)">Agregar</button>
+        </div>
+        <div class="producto">
+            <p>
+                <div class="camiseta">
+                    <img src="tercera.webp" alt=""> Camiseta 3ª Equipación - 85€
+                </div>
+            </p>
+            <button onclick="agregarAlCarrito('Camiseta 3ª Equipación', 85)">Agregar</button>
+        </div>
+    </div>
+
+    <!-- Sección del carrito de compras -->
+    <h2>Carrito de compras</h2>
+    <ul id="carrito"></ul>
+    <p><strong>Total:</strong> <span id="total">0</span> €</p>
+
+    <!-- Sección de bienvenida/inicio -->
+    <div id="inicio">
+        <h1><b>Real Madrid Club de Fútbol</b></h1>
+        <p>Bienvenido a la página dedicada al <b>Real Madrid</b>, el club más grande del mundo.</p>
+        <p>El club se caracteriza por su <i>historia legendaria</i>, <u>grandes títulos</u> y su afición apasionada.</p>
+        <p>Visita la <a href="https://www.realmadrid.com" target="_blank">página oficial del Real Madrid</a>.</p>
+        <p>Lee más sobre su <a href="#historia">historia aquí</a>.</p>
+    </div>
+
+    <!-- Sección de historia del club -->
+    <div id="historia">
+        <h2>Historia del Club</h2>
+        <ol>
+            <li>Fundación en 1902</li>
+            <li>Primer título de liga en 1932</li>
+            <li>15 Copas de Europa</li>
+        </ol>
+
+        <h3>Títulos Ganados</h3>
+        <ul>
+            <li>36 Ligas</li>
+            <li>20 Copas del Rey</li>
+            <li>15 UEFA Champions League</li>
+        </ul>
+    </div>
+
+    <!-- Sección de galería de imágenes -->
+    <div id="galeria">
+        <div class="encabezadoimg">
+            <h2>Galería de Imágenes</h2>
+        </div>
+        <div class="imagenes">
+            <a href="https://www.realmadrid.com" target="_blank">
+                <img src="escudo.png" class="imagen-galeria" alt="Escudo Real Madrid">
+            </a>
+            <img src="estadio.avif" class="imagen-galeria" alt="Estadio Santiago Bernabéu">
+            <img src="vini.jfif" class="imagen-galeria" alt="Vinicius Jr.">
+            <img src="trofeos.jfif" class="imagen-galeria" alt="Trofeos Real Madrid">
+            <img src="aficion.jfif" class="imagen-galeria" alt="Afición del Real Madrid">
+        </div>
+    </div>
+
+    <!-- Sección de la plantilla del equipo -->
+    <div id="plantilla">
+        <h2>Plantilla Actual - Once Titular Real Madrid</h2>
+        <table border="1">
+            <tr>
+                <th>Jugador</th>
+                <th>Posición</th>
+                <th>Número</th>
+            </tr>
+            <tr>
+                <td>Thibaut Courtois</td>
+                <td>Portero</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Dani Carvajal</td>
+                <td>Defensa</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Antonio Rüdiger</td>
+                <td>Defensa</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>David Alaba</td>
+                <td>Defensa</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Ferland Mendy</td>
+                <td>Defensa</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Aurélien Tchouaméni</td>
+                <td>Centrocampista</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Federico Valverde</td>
+                <td>Centrocampista</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Jude Bellingham</td>
+                <td>Centrocampista</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Rodrygo Goes</td>
+                <td>Delantero</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Vinícius Jr.</td>
+                <td>Delantero</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Kylian Mbappé</td>
+                <td>Delantero</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="javascript.js"></script>
+</body>
+</html>
