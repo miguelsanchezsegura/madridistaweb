@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración del tipo de documento (DTD) externo para validación -->
+<!DOCTYPE Realmadrid SYSTEM "realmadrid.dtd">
+<!-- Asociación con una hoja de estilo XSL para transformar la visualización -->
+<?xml-stylesheet type="text/xsl" href="realmadrid.xsl"?>
+
+<!-- Elemento raíz que representa al club Real Madrid -->
+<realmadrid>
+
+    <!-- Información general del club -->
+    <club nombre="Real Madrid CF" fundado="1902" pais="España">
+        <presidente>Florentino Pérez</presidente>
+        <entrenador>Carlo Ancelotti</entrenador>
+        <estadio>Santiago Bernabéu</estadio>
+    </club>
+
+    <!-- Plantilla de jugadores para la temporada 2024-2025 -->
+    <plantilla temporada="2024-2025">
+        <!-- Cada jugador tiene nombre, posición y número dorsal -->
+        <jugador nombre="Thibaut Courtois" posicion="Portero" dorsal="1" />
+        <jugador nombre="Dani Carvajal" posicion="Defensa" dorsal="2" />
+        <jugador nombre="Antonio Rüdiger" posicion="Defensa" dorsal="22" />
+        <jugador nombre="David Alaba" posicion="Defensa" dorsal="4" />
+        <jugador nombre="Ferland Mendy" posicion="Defensa" dorsal="23" />
+        <jugador nombre="Aurélien Tchouaméni" posicion="Centrocampista" dorsal="14" />
+        <jugador nombre="Federico Valverde" posicion="Centrocampista" dorsal="8" />
+        <jugador nombre="Jude Bellingham" posicion="Centrocampista" dorsal="5" />
+        <jugador nombre="Rodrygo Goes" posicion="Delantero" dorsal="11" />
+        <jugador nombre="Vinícius Jr." posicion="Delantero" dorsal="7" />
+        <jugador nombre="Kylian Mbappé" posicion="Delantero" dorsal="9" />
+    </plantilla>
+
+    <!-- Palmarés del club (títulos ganados) -->
+    <palmares>
+        <liga cantidad="36" />
+        <champions cantidad="15" />
+        <copaDelRey cantidad="20" />
+    </palmares>
+
+    <!-- Información sobre la afición del club -->
+    <aficion>
+        <socios>Más de 100,000</socios> <!-- Número aproximado de socios oficiales -->
+        <penyas>Más de 2,000</penyas> <!-- Número de peñas o grupos de aficionados -->
+        <fans continente="Europa">Millones</fans> <!-- Alcance de fanáticos por continente -->
+    </aficion>
+
+    <!-- Patrocinadores del club -->
+    <sponsors>
+        <principal>Emirates</principal> <!-- Patrocinador principal (en la camiseta) -->
+        <tecnico>Adidas</tecnico> <!-- Marca técnica que provee la ropa -->
+        <patrocinador /> <!-- Campo vacío (puede ser llenado en el futuro) -->
+        <colaborador /> <!-- Otro tipo de colaborador aún no especificado -->
+    </sponsors>
+
+    <!-- Canales oficiales y redes sociales del club -->
+    <multimedia>
+        <web>https://www.realmadrid.com</web> <!-- Sitio web oficial -->
+        <canalYoutube>https://www.youtube.com/realmadrid</canalYoutube> <!-- Canal oficial de YouTube -->
+        <redes>
+            <twitter>@realmadrid</twitter>
+            <instagram>@realmadrid</instagram>
+            <facebook>@realmadrid</facebook>
+        </redes>
+    </multimedia>
+
+</realmadrid>
